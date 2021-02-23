@@ -16,5 +16,86 @@
 	"RAM" : 4,
 	"memory" : 128,
 	"battery" : 4030,
+	"camera" : 3
+	
+}
+{
+	"number" : "A3",
+	"model" : "Mi10",
+	"thickness" : 8, 
+	"weight" : 200,
+	"RAM" : 6,
+	"memory" : 64,
+	"battery" : 4160,
+	"camera" : 2
+}
+{
+	"number" : "A4",
+	"model" : "Mi 10 lite",
+	"thickness" : 10, 
+	"weight" : 190,
+	"RAM" : 6,
+	"memory" : 64,
+	"battery" : 4820,
+	"camera" : 3
+}
+{
+	"number" : "A5",
+	"model" : "Mi 10T lite",
+	"thickness" : 9, 
+	"weight" : 200,
+	"RAM" : 6,
+	"memory" : 128,
+	"battery" : 5000,
+	"camera" : 2
+}
+{
+	"number" : "A6",
+	"model" : "Mi 10T",
+	"thickness" : 8, 
+	"weight" : 200,
+	"RAM" : 8,
+	"memory" : 128,
+	"battery" : 5000,
+	"camera" : 3
+}
+{
+	"number" : "A7",
+	"model" : "Mi 10T pro",
+	"thickness" : 9, 
+	"weight" : 260,
+	"RAM" : 8,
+	"memory" : 128,
+	"battery" : 3400,
+	"camera" : 3
+}
+{
+	"number" : "A8",
+	"model" : "Mi 8",
+	"thickness" : 8, 
+	"weight" : 200,
+	"RAM" : 6,
+	"memory" : 64,
+	"battery" : 3000,
+	"camera" : 2
+}
+{
+	"number" : "A9",
+	"model" : "Mi Play",
+	"thickness" : 9, 
+	"weight" : 200,
+	"RAM" : 4,
+	"memory" : 64,
+	"battery" : 3300,
+	"camera" : 2
+}
+{
+	"number" : "A10",
+	"model" : "Mi 9",
+	"thickness" : 8, 
+	"weight" : 220,
+	"RAM" : 6,
+	"memory" : 64,
+	"battery" : 4780,
 	"camera" : 2
 }

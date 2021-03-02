@@ -16,26 +16,25 @@ n = 0
 
 for i in range(3):
     for j in range(6):
-        print(a[i][j], a[i + 1][j], end=' / ')
-        if j <= 2:
-            if a[i][j] < a[i + 1][j]:
-                n = n + 1
+        for k in range(3):
+            print(a[i][j], a[i + k][j], end=' / ')
+            if j <= 2:
+                if a[i][j] < a[i + k][j]:
+                    n = n + 1
+                    if a[i][j] == a[i + k][j]:
+                        n = n + 1
+                else:
+                    n = 0
+                    if a[i][j] == a[i + k][j]:
+                        n = n + 1
             else:
-                n == 0
-                if a[i][j] == a[i + 1][j]:
-                    n == n + 1
-
-        else:
-            if a[i][j] > a[i + 1][j]:
-                n == 0
-            else:
-                n = n + 1
-                if a[i][j] == a[i + 1][j]:
-                    n == n + 1
-
-    if n == 6:
-        print('True')
-    else:
-        print('Fail')
+                if a[i][j] > a[i + k][j]:
+                    n = n + 1
+                    if a[i][j] == a[i + k][j]:
+                        n = n + 1
+                else:
+                    n = 0
+                    if a[i][j] == a[i + k][j]:
+                        n = n + 1
 
 print()

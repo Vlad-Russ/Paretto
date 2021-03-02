@@ -64,7 +64,7 @@ box = {1: ['H', 'H', 'H', 'H', 'H', 'H', 'H', 'H', 'H', 'H'],
 buffer = []
 for i in range(1, 10):
 
-    for g in range(i, 10):
+    for g in range(i, 11):
         check = False
         check_box = [False, True, False, False, True]
 
@@ -73,7 +73,7 @@ for i in range(1, 10):
                 check_box[y - 1] = True
 
         if check_box[0] and check_box[1]:
-            for y in range(3, 6):
+            for y in range(2, 5):
                 if alternatives[i][y] <= alternatives[g][y]:
                     check_box[y - 1] = True
 
@@ -108,6 +108,8 @@ resultT = AsciiTable(table_X)
 resultT.inner_heading_row_border = True
 resultT.outer_border = False
 resultT.inner_row_border = False
+resultT.inner_column_border = True
 
 print()
+print("Таблица Парето")
 print(resultT.table)

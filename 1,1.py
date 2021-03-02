@@ -14,9 +14,9 @@ a = [[10, 260, 4, 64, 3010, 2],
 
 n = 0
 
-for i in range(3):
+for i in range(1):
     for j in range(6):
-        for k in range(3):
+        for k in range(1,2):
             print(a[i][j], a[i + k][j], end=' / ')
             if j <= 2:
                 if a[i][j] < a[i + k][j]:
@@ -37,4 +37,5 @@ for i in range(3):
                     if a[i][j] == a[i + k][j]:
                         n = n + 1
 
-print()
+
+

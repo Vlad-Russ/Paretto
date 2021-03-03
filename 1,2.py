@@ -63,7 +63,7 @@ for i in range(1, 10):
 
     for g in range(i, 11):
         check = False
-        check_box = [False, True, False, False, True]
+        check_box = [True, True, False, False, Felse , Felse]
 
         for y in range(1, 3):
             if alternatives[i][y] >= alternatives[g][y]:

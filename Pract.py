@@ -88,7 +88,7 @@ def opt(x, o):
     tab3.append(tab2[0])
     for i in range(len(tab0)):
         tab3.append(tab2[int(tab0[i][0])])
-    return tab
+    return tab3
 
 
 def lex(x, c):

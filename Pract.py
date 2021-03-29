@@ -2,6 +2,7 @@ def output(x):
     for i in range(len(x)):
         print(x[i])
 
+
 def inf(x):
     tab0 = []
     for i in range(1, len(x)):
@@ -9,6 +10,8 @@ def inf(x):
         for j in range(len(x[i])):
             tab0[i - 1].append(x[i][j] * x[0][j])
     return tab0
+
+
 def show(x):
     tab2 = []
     for i in range(len(x)):
@@ -53,9 +56,10 @@ def alt(x):
         for n in range(m):
             add = True
             for j in range(len(tab0[m])):
-                if tab0[m][j] < tab0[n][j] or tab0[m] == tab0[n]: \
-                        add = False
-    if add: tab1[m + 1][n + 1] = 'A' + str(m + 1)
+                if tab0[m][j] < tab0[n][j] or tab0[m] == tab0[n]:
+                    add = False
+            if add:
+                tab1[m + 1][n + 1] = 'A' + str(m + 1)
     return tab1
 
 
@@ -67,12 +71,14 @@ def bord(x, b):
         tab0[i].insert(0, i + 1)
     for t in range(len(b)):
         b[t][1] = b[t][1] * x[0][b[t][0] - 1]
+        for i in range(len(tab0)):
+            if tab0[i][b[t][0]] <= b[t][1]:
+                tab0[i] = [None]
+        for i in range(0, tab0.count([None])):
+            tab0.remove([None])
+    ext.append(tab2[0])
     for i in range(len(tab0)):
-        if tab0[i][b[t][0]] <= b[t][1]: tab0[i] = [None]
-    for i in range(0, tab0.count([None])):
-        tab0.remove([None])
-        ext.append(tab2[0])
-    for i in range(len(tab0)): ext.append(tab2[tab0[i][0]])
+        ext.append(tab2[tab0[i][0]])
     return ext
 
 
@@ -129,16 +135,16 @@ def main():
 
 
 data = [['(-)', '(-)', '(+)', '(+)', '(+)', '(-)'],
-        [49990, 68, 128, 4, 4096, 20],
-        [48939, 62, 256, 8, 4096, 14],
-        [47990, 67, 192, 6, 7680, 12],
-        [47472, 65, 192, 3, 3840, 28],
-        [45450, 66, 192, 6, 7680, 12],
-        [42990, 67, 192, 8, 7680, 7],
-        [42270, 35, 128, 2, 3840, 28],
-        [40000, 75, 160, 5, 5120, 16],
-        [40000, 75, 160, 5, 5120, 16],
-        [40775, 70, 128, 1, 2560, 28]]
+        [10, 260, 4, 64, 3010, 2],
+        [10, 200, 4, 128, 4030, 3],
+        [8, 200, 6, 64, 4160, 2],
+        [10, 190, 6, 64, 4820, 3],
+        [9, 200, 6, 128, 5000, 2],
+        [8, 200, 8, 128, 5000, 3],
+        [9, 260, 8, 128, 3400, 3],
+        [8, 200, 6, 64, 3000, 2],
+        [9, 200, 4, 64, 3300, 2],
+        [8, 220, 6, 64, 4780, 2]]
 border = [[1, 45000], [5, 4000]]
 optimal = [1, [[5, 4096], [6, 14]]]
 cri = [4, 1, 6, 2, 3, 5]

@@ -106,8 +106,8 @@ def lex(x, c):
                     tab0[j] = [None]
             for k in range(0, tab0.count([None])):
                 tab0.remove([None])
-        if len(tab0) == 1:
-                    go = False
+            if len(tab0) == 1:
+                go = False
         tab4.append(tab2[0])
         for i in range(len(tab0)):
             tab4.append(tab2[tab0[i][0]])
